@@ -1,6 +1,7 @@
 :root {
   --clr-primary: #5ce4ca;
   --clr-secondary: #fffaa4;
+  --clr-secondary-light: #fffae9;
   --clr-light-secondary: #fffae9;
   --clr-tertiary: #ff7d7d;
   --clr-black: #003d31;
@@ -54,6 +55,7 @@ html:focus-within {
 html,
 body {
   height: 100%;
+  /* background-color: var(--clr-white); */
 }
 
 /* Set core body defaults */
@@ -261,4 +263,47 @@ body {
   color: var(--clr-paragraph);
   font-size: var(--fs-18);
   font-weight: var(--fw-regular);
+}
+/* Learning Categories */
+
+.learning-categories {
+  display: grid;
+  gap: 5rem;
+  padding: 135px;
+  height: 622px;
+  margin-top: 5rem;
+}
+.learning-categories h3 {
+  justify-self: center;
+  font-size: var(--fs-46);
+  line-height: 52px;
+  font-weight: var(--fw-bold);
+  color: var(--clr-black);
+  text-align: center;
+  width: 570px;
+}
+.learning-categories span {
+  color: var(--clr-primary);
+}
+.learning-categories .categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.learning-categories .categories .category {
+  display: grid;
+  gap: 1rem;
+  width: 370px;
+  border-radius: 12px;
+  padding: 1rem;
+  background-color: var(--clr-secondary-light);
+}
+.learning-categories .categories .category p {
+  font-size: var(--fs-18);
+  font-weight: var(--fw-regular);
+  line-height: 28px;
+  color: var(--clr-paragraph);
+}
+.learning-categories .categories .category b {
+  font-weight: var(--fw-bold);
 }
