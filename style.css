@@ -231,7 +231,7 @@ body {
   background-color: var(--clr-black);
   color: var(--clr-white);
 }
-/* Intro Section */
+/* Intro and learning Section */
 
 .intro {
   display: flex;
@@ -245,10 +245,20 @@ body {
   width: 470px;
   height: 423px;
 }
+.intro .dialect-lady-svg {
+  width: 470px;
+  height: 379px;
+}
 .intro .intro-text {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
   padding: 3rem;
+}
+.intro .intro-text .learning-button {
+  margin-top: 20px;
+  max-width: 182px;
+  text-wrap: nowrap;
+  background-color: var(--clr-secondary);
 }
 .intro .intro-text h4 {
   font-size: var(--fs-46);
@@ -306,4 +316,28 @@ body {
 }
 .learning-categories .categories .category b {
   font-weight: var(--fw-bold);
+}
+.categories .category .category-globe-svg {
+  width: 56px;
+  height: 56px;
+}
+.categories .category .category-card-svg {
+  width: 109px;
+  height: 56px;
+}
+.categories .category .category-book-svg {
+  width: 75px;
+  height: 56px;
+}
+.categories .category .category-brick-svg {
+  width: 57px;
+  height: 56px;
+}
+.categories .category .category-list-svg {
+  width: 41px;
+  height: 56px;
+}
+.categories .category .category-watch-svg {
+  width: 50px;
+  height: 56px;
 }
