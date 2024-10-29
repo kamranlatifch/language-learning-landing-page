@@ -447,3 +447,39 @@ body {
   border-top: 1px solid #dee5e4;
   margin: 0;
 }
+
+/* Subscription section */
+.subscription {
+  height: 388px;
+  background-color: var(--clr-primary);
+  padding: 135px;
+  display: flex;
+  align-items: center;
+
+  gap: 8rem;
+}
+.subscription .headings {
+  display: grid;
+  gap: 1rem;
+}
+.subscription .headings h3 {
+  background-color: var(--clr-white);
+  padding: 1rem;
+  width: 373px;
+  text-wrap: nowrap;
+  border-radius: 12px;
+  font-size: var(--fs-46);
+  font-weight: var(--fw-semi-bold);
+}
+.subscription .headings h4 {
+  background-color: var(--clr-secondary);
+  padding: 1rem 38px;
+  text-wrap: nowrap;
+  border-radius: 12px;
+  font-size: var(--fs-46);
+  font-weight: var(--fw-bold);
+}
+.subscription .description {
+  display: grid;
+  gap: 2rem;
+}
