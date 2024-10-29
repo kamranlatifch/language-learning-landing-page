@@ -8,7 +8,6 @@
   --clr-white: #ffffff;
   --clr-paragraph: #596966;
 
-  /* Font Sizes */
   --fs-16: 1rem;
   --fs-18: 1.125rem;
   --fs-22: 1.375rem;
@@ -27,56 +26,36 @@
   --fs-body: var(--fw-regular);
 }
 
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Remove default margin */
 * {
   margin: 0;
   padding: 0;
   font: inherit;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
   list-style: none;
 }
 
-/* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
 }
 
-html,
-body {
-  height: 100%;
-  /* background-color: var(--clr-white); */
-}
-
-/* Set core body defaults */
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
 
-/* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-/* Make images easier to work with */
 img,
 picture,
 svg {
   max-width: 100%;
   display: block;
 }
-/* general styling */
 
 body {
   font-size: var(--fs-body);
@@ -98,6 +77,7 @@ body {
   width: 144px;
   height: 144px;
 }
+
 .smily-svg {
   position: absolute;
   top: 313px;
@@ -105,6 +85,7 @@ body {
   width: 140px;
   height: 180px;
 }
+
 .alphabet-svg {
   position: absolute;
   bottom: 90px;
@@ -112,6 +93,7 @@ body {
   width: 68px;
   height: 70px;
 }
+
 .alphabet1-svg {
   position: absolute;
   bottom: 58px;
@@ -119,6 +101,7 @@ body {
   width: 68px;
   height: 70px;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -142,16 +125,19 @@ body {
 .nav-list a:focus {
   color: var(--clr-primary);
 }
+
 .login-buttons {
   display: flex;
   gap: 10px;
 }
+
 .login-buttons .login {
   border: 1px solid var(--clr-black);
   background-color: transparent;
   border-radius: 4px;
   padding: 8px 24px;
 }
+
 .login-buttons .signup {
   border: 1px solid var(--clr-black);
   background-color: var(--clr-black);
@@ -179,14 +165,17 @@ body {
   font-weight: var(--fw-semi-bold);
   padding: 8px 38px;
 }
+
 .hero-section .language-heading {
   background-color: var(--clr-secondary);
   font-weight: var(--fw-bold);
 }
+
 .hero-flex-heading {
   display: flex;
   gap: 1rem;
 }
+
 .hero-section p {
   font-size: var(--fs-18);
   line-height: 28px;
@@ -194,11 +183,13 @@ body {
   color: var(--clr-black);
   max-width: 726px;
 }
+
 .hero-buttons {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
+
 .hero-buttons > .dropdown,
 .button {
   border: none;
@@ -211,6 +202,7 @@ body {
 .dropdown-container {
   position: relative; /* This ensures the dropdown appears relative to this container */
 }
+
 .hero-buttons .dropdown {
   position: relative;
   /* border: 1px solid var(--clr-black); */
@@ -244,34 +236,41 @@ body {
   /* background-color: #596966; */
   justify-content: space-between;
 }
+
 .intro img {
   width: 470px;
   height: 423px;
 }
+
 .intro .dialect-lady-svg {
   width: 470px;
   height: 379px;
 }
+
 .intro .intro-text {
   display: grid;
   gap: 2rem;
   padding: 3rem;
 }
+
 .intro .intro-text .learning-button {
   margin-top: 20px;
   max-width: 182px;
   text-wrap: nowrap;
   background-color: var(--clr-secondary);
 }
+
 .intro .intro-text h4 {
   font-size: var(--fs-46);
   line-height: 52px;
   font-weight: var(--fw-bold);
   color: var(--clr-black);
 }
+
 .intro .intro-text h4 span {
   color: var(--clr-primary);
 }
+
 .intro .intro-text p {
   color: var(--clr-paragraph);
   font-size: var(--fs-18);
@@ -297,9 +296,11 @@ body {
   text-align: center;
   width: 570px;
 }
+
 .learning-categories span {
   color: var(--clr-primary);
 }
+
 .learning-categories .categories {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -314,35 +315,43 @@ body {
   padding: 1rem;
   background-color: var(--clr-secondary-light);
 }
+
 .learning-categories .categories .category p {
   font-size: var(--fs-18);
   font-weight: var(--fw-regular);
   line-height: 28px;
   color: var(--clr-paragraph);
 }
+
 .learning-categories .categories .category b {
   font-weight: var(--fw-bold);
 }
+
 .categories .category .category-globe-svg {
   width: 56px;
   height: 56px;
 }
+
 .categories .category .category-card-svg {
   width: 109px;
   height: 56px;
 }
+
 .categories .category .category-book-svg {
   width: 75px;
   height: 56px;
 }
+
 .categories .category .category-brick-svg {
   width: 57px;
   height: 56px;
 }
+
 .categories .category .category-list-svg {
   width: 41px;
   height: 56px;
 }
+
 .categories .category .category-watch-svg {
   width: 50px;
   height: 56px;
@@ -366,6 +375,7 @@ body {
   text-wrap: nowrap;
   font-weight: var(--fw-bold);
 }
+
 .stats img {
   width: 34px;
   height: 35px;
@@ -380,20 +390,24 @@ body {
   gap: 2rem;
   padding: 135px;
 }
+
 .testimonial .titles {
   justify-self: center;
   color: var(--clr-black);
   text-align: center;
   width: 570px;
 }
+
 .testimonial .titles h3 {
   font-size: var(--fs-46);
   line-height: 52px;
   font-weight: var(--fw-bold);
 }
+
 .testimonial .titles h3 span {
   color: var(--clr-primary);
 }
+
 .testimonial .titles p {
   font-size: var(--fs-18);
   font-weight: var(--fw-regular);
@@ -407,6 +421,7 @@ body {
   justify-content: center;
   gap: 1rem;
 }
+
 .testimonial .cards .card {
   display: grid;
   background-color: var(--clr-white);
@@ -416,20 +431,24 @@ body {
   border-radius: 12px;
   /* gap: 1rem; */
 }
+
 .testimonial .cards .card .card-header {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
+
 .testimonial .cards .card .card-titles h4 {
   font-size: var(--fs-18);
   font-weight: var(--fw-bold);
 }
+
 .testimonial .cards .card .card-titles p {
   font-size: 14px;
   font-weight: var(--fw-regular);
   color: var(--clr-paragraph);
 }
+
 .testimonial .cards .card .card-body p {
   font-size: var(--fs-16);
   font-weight: var(--fw-regular);
@@ -464,10 +483,12 @@ body {
 
   gap: 8rem;
 }
+
 .subscription .headings {
   display: grid;
   gap: 1rem;
 }
+
 .subscription .headings h3 {
   background-color: var(--clr-white);
   padding: 1rem;
@@ -477,6 +498,7 @@ body {
   font-size: var(--fs-46);
   font-weight: var(--fw-semi-bold);
 }
+
 .subscription .headings h4 {
   background-color: var(--clr-secondary);
   padding: 1rem 38px;
@@ -485,6 +507,7 @@ body {
   font-size: var(--fs-46);
   font-weight: var(--fw-bold);
 }
+
 .subscription .description {
   display: grid;
   gap: 2rem;
@@ -497,6 +520,7 @@ body {
   background-color: var(--clr-secondary-light);
   padding: 140px;
 }
+
 .faqs .titles {
   display: grid;
   justify-self: center;
@@ -506,20 +530,24 @@ body {
   max-height: 200px;
   gap: 0.5rem;
 }
+
 .faqs .titles h3 {
   font-size: var(--fs-46);
   line-height: 52px;
   font-weight: var(--fw-bold);
 }
+
 .faqs .titles h3 span {
   color: var(--clr-primary);
 }
+
 .faqs .titles p {
   font-size: var(--fs-18);
   font-weight: var(--fw-regular);
   color: var(--clr-paragraph);
   margin-top: 10px;
 }
+
 .faqs .titles p a {
   font-size: var(--fs-18);
   font-weight: var(--fw-semi-bold);
@@ -571,40 +599,48 @@ body {
 .footer hr {
   margin-top: 3rem;
 }
+
 .footer .copyrights {
   display: grid;
   gap: 1rem;
 }
+
 .copyrights h3 {
   margin-top: 2rem;
   font-size: var(--fs-22);
   font-weight: var(--fw-bold);
   color: var(--clr-black);
 }
+
 .copyrights .language {
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
 }
+
 .copyrights .language p {
   font-size: var(--fs-18);
   font-weight: var(--fw-regular);
   color: var(--clr-black);
 }
+
 .footer .media-icons {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
 }
+
 .footer .media-icons p {
   font-size: var(--fs-16);
   font-weight: var(--fw-regular);
   color: var(--clr-black);
 }
+
 .footer .media-icons .icons {
   display: flex;
   gap: 1rem;
 }
+
 @media (max-width: 1280px) {
   .footer {
     display: grid;
@@ -622,31 +658,38 @@ body {
     padding: 100px;
     justify-content: center;
   }
+
   .learning-categories .categories {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
+
   .intro1 {
     padding: 250px 35px;
   }
+
   .testimonial .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     gap: 1rem;
   }
+
   .subscription .headings h3 {
     width: 70%;
     font-size: var(--fs-36);
   }
+
   .subscription .headings h4 {
     padding: 0.5rem 28px;
     font-size: var(--fs-36);
   }
+
   .subscription .hero-buttons {
     display: grid;
   }
+
   .subscription {
     padding: 135px 20px;
 
@@ -658,9 +701,6 @@ body {
     padding: 2rem 1rem;
   }
 
-  /* .footer .quick-links {
-    width: 925px;
-  } */
   .world-svg {
     position: absolute;
     top: 170px;
@@ -668,6 +708,7 @@ body {
     width: 144px;
     height: 144px;
   }
+
   .smily-svg {
     position: absolute;
     top: 313px;
@@ -680,6 +721,7 @@ body {
     width: 300px;
     height: 300px;
   }
+
   .intro .dialect-lady-svg {
     width: 300px;
     height: 300px;
@@ -697,6 +739,7 @@ body {
     font-size: var(--fs-16);
     font-weight: var(--fw-regular);
   }
+
   .intro .intro-text {
     gap: 0rem;
   }
@@ -710,6 +753,7 @@ body {
     width: 144px;
     height: 144px;
   }
+
   .smily-svg {
     position: absolute;
     top: 100px;
@@ -717,6 +761,7 @@ body {
     width: 140px;
     height: 180px;
   }
+
   .alphabet-svg {
     position: absolute;
     bottom: 50px;
@@ -724,6 +769,7 @@ body {
     width: 68px;
     height: 70px;
   }
+
   .alphabet1-svg {
     position: absolute;
     bottom: 58px;
@@ -741,6 +787,7 @@ body {
   .footer .quick-links {
     width: 625px;
   }
+
   .faqs {
     padding: 120px 20px;
   }
@@ -755,6 +802,7 @@ body {
     justify-content: center;
     gap: 1rem;
   }
+
   .testimonial .cards .card {
     display: grid;
     background-color: var(--clr-white);
@@ -763,23 +811,28 @@ body {
     /* padding: 30px 20px;
     border-radius: 12px; */
   }
+
   .nav-list {
     display: grid;
     gap: 0rem;
     font-weight: var(--fw-semi-bold);
     list-style: none;
   }
+
   .intro img {
     width: 200px;
     height: 400px;
   }
+
   .intro .dialect-lady-svg {
     width: 200px;
     height: 300px;
   }
+
   .intro {
     padding: 35px;
   }
+
   .intro1 {
     padding: 200px 35px;
   }
@@ -794,14 +847,17 @@ body {
 
     width: 325px;
   }
+
   .faqs {
     padding: 120px 10px;
   }
+
   .faqs .titles {
     text-align: center;
     text-wrap: wrap;
     width: 270px;
   }
+
   .faqs .titles p {
     font-size: var(--fs-18);
     text-wrap: wrap;
@@ -822,10 +878,12 @@ body {
     display: flex;
     justify-content: center;
   }
+
   .subscription .headings h4 {
     font-size: 28px;
     font-weight: var(--fw-bold);
   }
+
   .subscription .headings h3 {
     font-size: 28px;
   }
@@ -833,12 +891,14 @@ body {
   .testimonial {
     padding: 135px 20px;
   }
+
   .testimonial .cards .card .card-header {
     display: grid;
     align-items: center;
     justify-content: center;
     gap: 1rem;
   }
+
   .testimonial .cards .card {
     display: grid;
     background-color: var(--clr-white);
@@ -858,6 +918,7 @@ body {
     width: 70px;
     height: 70px;
   }
+
   .smily-svg {
     position: absolute;
     top: 113px;
@@ -865,6 +926,7 @@ body {
     width: 70px;
     height: 70px;
   }
+
   .hero-section {
     display: grid;
     padding: 1rem;
@@ -872,9 +934,11 @@ body {
     justify-items: center;
     text-align: center;
   }
+
   .header {
     padding: 5px;
   }
+
   .hero-section h3 {
     border-radius: 22px;
     background-color: var(--clr-white);
@@ -883,6 +947,7 @@ body {
 
     /* padding: 8px 38px; */
   }
+
   .hero-buttons .dropdown,
   .button {
     border: none;
@@ -891,18 +956,22 @@ body {
     line-height: 28px;
     padding: 8px 20px;
   }
+
   .login-buttons .login {
     padding: 4px 12px;
   }
+
   .login-buttons .signup {
     padding: 4px 12px;
   }
+
   .intro {
     display: grid;
     text-align: center;
     justify-items: center;
     padding: 0;
   }
+
   .intro1 {
     display: grid;
     text-align: center;
@@ -917,11 +986,13 @@ body {
     justify-items: center;
     /* height: 722px; */
   }
+
   .learning-categories .categories {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+
   .learning-categories .categories .category {
     width: 100%;
   }
