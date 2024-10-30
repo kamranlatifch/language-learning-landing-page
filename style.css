@@ -4,16 +4,16 @@
   --clr-secondary-light: #fffae9;
   --clr-light-secondary: #fffae9;
   --clr-tertiary: #ff7d7d;
-  --clr-black: #003d31;
-  --clr-white: #ffffff;
-  --clr-paragraph: #596966;
+  --clr-text-primary: #003d31;
+  --clr-base: #ffffff;
+  --clr-paragraph-text: #596966;
 
-  --fs-16: 1rem;
-  --fs-18: 1.125rem;
-  --fs-22: 1.375rem;
-  --fs-46: 2.875rem;
-  --fs-36: 2.25rem;
-  --fs-72: 4.5rem;
+  --fs-xs: 1rem;
+  --fs-sm: 1.125rem;
+  --fs-base: 1.375rem;
+  --fs-lg: 2.25rem;
+  --fs-xl: 2.875rem;
+  --fs-2xl: 4.5rem;
 
   --fw-regular: 400;
   --fw-semi-bold: 500;
@@ -60,7 +60,7 @@ svg {
 body {
   font-size: var(--fs-body);
   font-family: var(--ff-body);
-  color: var(--clr-black);
+  color: var(--clr-text-primary);
 }
 
 .primary-header {
@@ -118,7 +118,7 @@ body {
 
 .nav-list a {
   text-decoration: none;
-  color: var(--clr-black);
+  color: var(--clr-text-primary);
 }
 
 .nav-list a:hover,
@@ -132,15 +132,15 @@ body {
 }
 
 .login-buttons .login {
-  border: 1px solid var(--clr-black);
+  border: 1px solid var(--clr-text-primary);
   background-color: transparent;
   border-radius: 4px;
   padding: 8px 24px;
 }
 
 .login-buttons .signup {
-  border: 1px solid var(--clr-black);
-  background-color: var(--clr-black);
+  border: 1px solid var(--clr-text-primary);
+  background-color: var(--clr-text-primary);
   color: var(--clr-white);
   border-radius: 4px;
   padding: 8px 24px;
@@ -161,7 +161,7 @@ body {
 .hero-section h3 {
   border-radius: 22px;
   background-color: var(--clr-white);
-  font-size: var(--fs-72);
+  font-size: var(--fs-2xl);
   font-weight: var(--fw-semi-bold);
   padding: 8px 38px;
 }
@@ -171,30 +171,30 @@ body {
   font-weight: var(--fw-bold);
 }
 
-.hero-flex-heading {
+.hero-sub-headings {
   display: flex;
   gap: 1rem;
 }
 
 .hero-section p {
-  font-size: var(--fs-18);
+  font-size: var(--fs-sm);
   line-height: 28px;
   font-weight: var(--fw-regular);
-  color: var(--clr-black);
+  color: var(--clr-text-primary);
   max-width: 726px;
 }
 
-.hero-buttons {
+.buttons-wrapper {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
 
-.hero-buttons > .dropdown,
+.buttons-wrapper > .dropdown,
 .button {
   border: none;
   border-radius: 6px;
-  font-size: var(--fs-18);
+  font-size: var(--fs-sm);
   line-height: 28px;
   padding: 15px 35px;
 }
@@ -203,13 +203,13 @@ body {
   position: relative; /* This ensures the dropdown appears relative to this container */
 }
 
-.hero-buttons .dropdown {
+.buttons-wrapper .dropdown {
   position: relative;
-  /* border: 1px solid var(--clr-black); */
+  /* border: 1px solid var(--clr-text-primary); */
   border-radius: 6px;
   background-color: var(--clr-white);
 
-  font-size: var(--fs-18);
+  font-size: var(--fs-sm);
   line-height: 28px;
   padding: 15px 30px;
   width: 100%; /* Set width to ensure consistent dropdown alignment */
@@ -217,12 +217,12 @@ body {
   appearance: none; /* Remove default browser styles if needed */
 }
 
-.hero-buttons .dropdown {
+.buttons-wrapper .dropdown {
   background-color: var(--clr-white);
 }
 
-.hero-buttons .button {
-  background-color: var(--clr-black);
+.buttons-wrapper .button {
+  background-color: var(--clr-text-primary);
   color: var(--clr-white);
 }
 
@@ -231,8 +231,8 @@ body {
 .intro {
   display: flex;
   /* width: 1170px; */
-  height: 423px;
-  padding: 135px;
+  /* height: 423px; */
+  padding: 135px 135px 0px 135px;
   /* background-color: #596966; */
   justify-content: space-between;
 }
@@ -261,10 +261,10 @@ body {
 }
 
 .intro .intro-text h4 {
-  font-size: var(--fs-46);
+  font-size: var(--fs-xl);
   line-height: 52px;
   font-weight: var(--fw-bold);
-  color: var(--clr-black);
+  color: var(--clr-text-primary);
 }
 
 .intro .intro-text h4 span {
@@ -272,8 +272,8 @@ body {
 }
 
 .intro .intro-text p {
-  color: var(--clr-paragraph);
-  font-size: var(--fs-18);
+  color: var(--clr-paragraph-text);
+  font-size: var(--fs-sm);
   font-weight: var(--fw-regular);
 }
 
@@ -282,17 +282,15 @@ body {
 .learning-categories {
   display: grid;
   gap: 5rem;
-  padding: 135px;
-  height: 622px;
-  margin-top: 5rem;
+  padding: 135px 135px 20px 135px;
 }
 
 .learning-categories h3 {
   justify-self: center;
-  font-size: var(--fs-46);
+  font-size: var(--fs-xl);
   line-height: 52px;
   font-weight: var(--fw-bold);
-  color: var(--clr-black);
+  color: var(--clr-text-primary);
   text-align: center;
   width: 570px;
 }
@@ -317,10 +315,10 @@ body {
 }
 
 .learning-categories .categories .category p {
-  font-size: var(--fs-18);
+  font-size: var(--fs-sm);
   font-weight: var(--fw-regular);
   line-height: 28px;
-  color: var(--clr-paragraph);
+  color: var(--clr-paragraph-text);
 }
 
 .learning-categories .categories .category b {
@@ -362,16 +360,17 @@ body {
 .stats {
   display: flex;
   flex-wrap: wrap;
-  height: 246px;
+  /* height: 246px; */
   background-color: var(--clr-tertiary);
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  margin-top: 15rem;
+  margin-top: 3rem;
+  padding: 100px 0px;
 }
 
 .stats p {
-  font-size: var(--fs-36);
+  font-size: var(--fs-lg);
   text-wrap: nowrap;
   font-weight: var(--fw-bold);
 }
@@ -386,32 +385,31 @@ body {
 .testimonial {
   display: grid;
   background-color: var(--clr-light-secondary);
-  /* height: 841px; */
   gap: 2rem;
   padding: 135px;
 }
 
-.testimonial .titles {
+.testimonial .testimonial-headings {
   justify-self: center;
-  color: var(--clr-black);
+  color: var(--clr-text-primary);
   text-align: center;
   width: 570px;
 }
 
-.testimonial .titles h3 {
-  font-size: var(--fs-46);
+.testimonial .testimonial-headings h3 {
+  font-size: var(--fs-xl);
   line-height: 52px;
   font-weight: var(--fw-bold);
 }
 
-.testimonial .titles h3 span {
+.testimonial .testimonial-headings h3 span {
   color: var(--clr-primary);
 }
 
-.testimonial .titles p {
-  font-size: var(--fs-18);
+.testimonial .testimonial-headings p {
+  font-size: var(--fs-sm);
   font-weight: var(--fw-regular);
-  color: var(--clr-paragraph);
+  color: var(--clr-paragraph-text);
   margin-top: 10px;
 }
 
@@ -439,20 +437,20 @@ body {
 }
 
 .testimonial .cards .card .card-titles h4 {
-  font-size: var(--fs-18);
+  font-size: var(--fs-sm);
   font-weight: var(--fw-bold);
 }
 
 .testimonial .cards .card .card-titles p {
   font-size: 14px;
   font-weight: var(--fw-regular);
-  color: var(--clr-paragraph);
+  color: var(--clr-paragraph-text);
 }
 
 .testimonial .cards .card .card-body p {
-  font-size: var(--fs-16);
+  font-size: var(--fs-xs);
   font-weight: var(--fw-regular);
-  color: var(--clr-paragraph);
+  color: var(--clr-paragraph-text);
 }
 
 .testimonial .cards .card .card-footer {
@@ -495,7 +493,7 @@ body {
   width: 373px;
   text-wrap: nowrap;
   border-radius: 12px;
-  font-size: var(--fs-46);
+  font-size: var(--fs-xl);
   font-weight: var(--fw-semi-bold);
 }
 
@@ -504,7 +502,7 @@ body {
   padding: 1rem 38px;
   text-wrap: nowrap;
   border-radius: 12px;
-  font-size: var(--fs-46);
+  font-size: var(--fs-xl);
   font-weight: var(--fw-bold);
 }
 
@@ -516,7 +514,6 @@ body {
 /* FAQS Section */
 .faqs {
   display: grid;
-  height: 350px;
   background-color: var(--clr-secondary-light);
   padding: 140px;
 }
@@ -524,7 +521,7 @@ body {
 .faqs .titles {
   display: grid;
   justify-self: center;
-  color: var(--clr-black);
+  color: var(--clr-text-primary);
   text-align: center;
   width: 570px;
   max-height: 200px;
@@ -532,7 +529,7 @@ body {
 }
 
 .faqs .titles h3 {
-  font-size: var(--fs-46);
+  font-size: var(--fs-xl);
   line-height: 52px;
   font-weight: var(--fw-bold);
 }
@@ -542,16 +539,16 @@ body {
 }
 
 .faqs .titles p {
-  font-size: var(--fs-18);
+  font-size: var(--fs-sm);
   font-weight: var(--fw-regular);
-  color: var(--clr-paragraph);
+  color: var(--clr-paragraph-text);
   margin-top: 10px;
 }
 
 .faqs .titles p a {
-  font-size: var(--fs-18);
+  font-size: var(--fs-sm);
   font-weight: var(--fw-semi-bold);
-  color: var(--clr-black);
+  color: var(--clr-text-primary);
   margin-top: 10px;
 }
 
@@ -568,7 +565,7 @@ body {
   gap: 1rem;
   justify-self: center;
 
-  color: var(--clr-black);
+  color: var(--clr-text-primary);
   width: 825px;
 }
 
@@ -582,7 +579,7 @@ body {
 }
 
 .footer .quick-links h6 {
-  font-size: var(--fs-22);
+  font-size: var(--fs-base);
   font-weight: var(--fw-bold);
   line-height: 32px;
   margin-bottom: 1rem;
@@ -590,10 +587,10 @@ body {
 
 .footer .quick-links a {
   text-decoration: none;
-  font-size: var(--fs-18);
+  font-size: var(--fs-sm);
   font-weight: var(--fw-regular);
   line-height: 28px;
-  color: var(--clr-paragraph);
+  color: var(--clr-paragraph-text);
 }
 
 .footer hr {
@@ -607,9 +604,9 @@ body {
 
 .copyrights h3 {
   margin-top: 2rem;
-  font-size: var(--fs-22);
+  font-size: var(--fs-base);
   font-weight: var(--fw-bold);
-  color: var(--clr-black);
+  color: var(--clr-text-primary);
 }
 
 .copyrights .language {
@@ -619,9 +616,9 @@ body {
 }
 
 .copyrights .language p {
-  font-size: var(--fs-18);
+  font-size: var(--fs-sm);
   font-weight: var(--fw-regular);
-  color: var(--clr-black);
+  color: var(--clr-text-primary);
 }
 
 .footer .media-icons {
@@ -631,9 +628,9 @@ body {
 }
 
 .footer .media-icons p {
-  font-size: var(--fs-16);
+  font-size: var(--fs-xs);
   font-weight: var(--fw-regular);
-  color: var(--clr-black);
+  color: var(--clr-text-primary);
 }
 
 .footer .media-icons .icons {
@@ -665,8 +662,8 @@ body {
     gap: 1rem;
   }
 
-  .intro1 {
-    padding: 250px 35px;
+  .boost-your-learning {
+    padding: 0px 35px;
   }
 
   .testimonial .cards {
@@ -678,15 +675,15 @@ body {
 
   .subscription .headings h3 {
     width: 70%;
-    font-size: var(--fs-36);
+    font-size: var(--fs-lg);
   }
 
   .subscription .headings h4 {
     padding: 0.5rem 28px;
-    font-size: var(--fs-36);
+    font-size: var(--fs-lg);
   }
 
-  .subscription .hero-buttons {
+  .subscription .buttons-wrapper {
     display: grid;
   }
 
@@ -728,15 +725,15 @@ body {
   }
 
   .intro .intro-text h4 {
-    font-size: var(--fs-36);
+    font-size: var(--fs-lg);
     line-height: 52px;
     font-weight: var(--fw-bold);
-    color: var(--clr-black);
+    color: var(--clr-text-primary);
   }
 
   .intro .intro-text p {
-    color: var(--clr-paragraph);
-    font-size: var(--fs-16);
+    color: var(--clr-paragraph-text);
+    font-size: var(--fs-xs);
     font-weight: var(--fw-regular);
   }
 
@@ -793,7 +790,7 @@ body {
   }
 
   .faqs .titles h3 {
-    font-size: var(--fs-36);
+    font-size: var(--fs-lg);
   }
 
   .testimonial .cards {
@@ -833,8 +830,8 @@ body {
     padding: 35px;
   }
 
-  .intro1 {
-    padding: 200px 35px;
+  .boost-your-learning {
+    padding: 0px 35px;
   }
 }
 @media (max-width: 768px) {
@@ -859,12 +856,12 @@ body {
   }
 
   .faqs .titles p {
-    font-size: var(--fs-18);
+    font-size: var(--fs-sm);
     text-wrap: wrap;
   }
 
   .faqs .titles h3 {
-    font-size: var(--fs-22);
+    font-size: var(--fs-base);
     text-wrap: wrap;
   }
 
@@ -874,7 +871,7 @@ body {
     justify-items: center;
   }
 
-  .subscription .hero-buttons {
+  .subscription .buttons-wrapper {
     display: flex;
     justify-content: center;
   }
@@ -904,9 +901,9 @@ body {
     background-color: var(--clr-white);
   }
 
-  .testimonial .titles {
+  .testimonial .testimonial-headings {
     justify-self: center;
-    color: var(--clr-black);
+    color: var(--clr-text-primary);
     text-align: center;
     width: 60%;
   }
@@ -942,17 +939,17 @@ body {
   .hero-section h3 {
     border-radius: 22px;
     background-color: var(--clr-white);
-    font-size: var(--fs-22);
+    font-size: var(--fs-base);
     font-weight: var(--fw-semi-bold);
 
     /* padding: 8px 38px; */
   }
 
-  .hero-buttons .dropdown,
+  .buttons-wrapper .dropdown,
   .button {
     border: none;
     border-radius: 6px;
-    font-size: var(--fs-16);
+    font-size: var(--fs-xs);
     line-height: 28px;
     padding: 8px 20px;
   }
@@ -972,19 +969,16 @@ body {
     padding: 0;
   }
 
-  .intro1 {
+  .boost-your-learning {
     display: grid;
     text-align: center;
     justify-items: center;
-    padding: 1000px 0px;
   }
 
   .learning-categories {
     display: grid;
     gap: 5rem;
-    padding: 350px 20px;
     justify-items: center;
-    /* height: 722px; */
   }
 
   .learning-categories .categories {
@@ -999,10 +993,10 @@ body {
 
   .learning-categories h3 {
     justify-self: center;
-    font-size: var(--fs-36);
+    font-size: var(--fs-lg);
     /* line-height: 52px; */
     font-weight: var(--fw-bold);
-    color: var(--clr-black);
+    color: var(--clr-text-primary);
     text-align: center;
     width: 80%;
   }
