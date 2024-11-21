@@ -140,7 +140,7 @@ body {
 
 .login-buttons .signup {
   border: 1px solid var(--clr-text-primary);
-  background-color: var(--clr-text-primary);
+  /* background-color: var(--clr-text-primary); */
   color: var(--clr-white);
   border-radius: 4px;
   padding: 8px 24px;
@@ -222,7 +222,7 @@ body {
 }
 
 .buttons-wrapper .button {
-  background-color: var(--clr-text-primary);
+  /* background-color: var(--clr-text-primary); */
   color: var(--clr-white);
 }
 
